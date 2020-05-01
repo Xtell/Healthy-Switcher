@@ -17,6 +17,7 @@
     "gulp-csso": "^4.0.1",
     "gulp-ext-replace": "^0.3.0",
     "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-posthtml": "^3.0.4",
