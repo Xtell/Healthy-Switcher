@@ -5,21 +5,21 @@
     user-select: none;
     padding: 10px 15px;
     border: 0;
-    background-color: $accent-color;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s background-color;
     &:not(.btn--disabled):hover {
-        background-color: darken($accent-color, 5%);
+        
     }
     &:not(.btn--disabled):focus {
-        background-color: darken($accent-color, 5%);
+       
         outline: none;
     }
     &:not(.btn--disabled):active {
-        background-color: darken($accent-color, 10%);
+        
     }
 
 }

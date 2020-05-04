@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    background-color: #232123;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 28px 0;
+}
+.header__nav-list {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header__nav-list li{
+    margin-right: 36px;
+}
+.header__nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    &:hover {
+        color: $primary-color;
+    }
+    &:active {
+        color: darken($primary-color, 10%);
+    }
+}

@@ -11,12 +11,12 @@ $lg: 992px;
 $xl: 1200px;
 
 // Fonts
-@include font('Roboto', normal, 400, '../fonts/roboto-regular');
-@include font('Roboto', normal, 700, '../fonts/roboto-bold');
+@include font('LiberationSans', normal, 400, '../fonts/liberationsans-regular');
+@include font('LiberationSans', normal, 700, '../fonts/liberationsans-bold');
 
 // Variables
-$accent-color: tomato;
-$roboto: "Roboto", "Arial", sans-serif;
+$primary-color: #34c759;
+$liberationSans: "LiberationSans", "Arial", sans-serif;
 // General styles
 *, *::before, *::after {
     box-sizing: border-box;
@@ -26,8 +26,8 @@ img {
     height: auto;
 }
 .sr-only:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="checkbox"].sr-only,
+input[type="radio"].sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -46,7 +46,7 @@ input[type="radio"].visually-hidden {
 body {
     position: relative;
     min-width: 320px;
-    font-family: $roboto;
+    font-family: $liberationSans;
     font-size: 16px;
     line-height: normal;
     color: #000000;
@@ -76,6 +76,6 @@ body {
 }
 @include media-breakpoint-up($xl)  {
     .container {
-        max-width: 1140px;
+        max-width: 1170px;
     }
 }
