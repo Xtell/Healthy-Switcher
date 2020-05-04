@@ -3,23 +3,27 @@
     vertical-align: middle;
     margin: 0;
     user-select: none;
-    padding: 10px 15px;
+    padding: 25px 50px;
     border: 0;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: $primary-color;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    border-radius: 43px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s background-color;
     &:not(.btn--disabled):hover {
-        
+        background-color: darken($primary-color, 10%);
     }
     &:not(.btn--disabled):focus {
-       
+        background-color: darken($primary-color, 10%);
         outline: none;
     }
     &:not(.btn--disabled):active {
-        
+        background-color: darken($primary-color, 15%);
     }
 
 }
