@@ -3,18 +3,22 @@
     vertical-align: middle;
     margin: 0;
     user-select: none;
-    padding: 25px 50px;
+
     border: 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s background-color;
+
+}
+.btn--default {
+    padding: 25px 50px;
     background-color: $primary-color;
     color: #1a1a1a;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.2em;
     border-radius: 43px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s background-color;
     &:not(.btn--disabled):hover {
         background-color: darken($primary-color, 10%);
     }
@@ -25,10 +29,33 @@
     &:not(.btn--disabled):active {
         background-color: darken($primary-color, 15%);
     }
+}
+.btn--small {
+
+    padding:0 32px;
+    font-size: 10px;
+    line-height: 40px;
+    border-radius: 30px;
 
 }
+.btn--transparent {
+    background-color: transparent;
+    border: 2px solid #303030;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $primary-color;
+        color: #252525;
+    }
+}
+.btn--circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
 
-
+}
 .btn:disabled,
 .btn--disabled {
     cursor: default;
@@ -37,7 +64,7 @@
 }
 
 .btn--large {
-    padding: 15px 40px;
+    padding: 25px 50px;
 }
 .btn--full-width {
     width: 100%;

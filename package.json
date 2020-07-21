@@ -27,7 +27,8 @@
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.0",
     "normalize.css": "^8.0.1",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "swiper": "^5.4.2"
   },
   "browserslist": [
     "last 2 versions"

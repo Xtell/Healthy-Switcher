@@ -1,5 +1,6 @@
 // Libs
 @import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/swiper/css/swiper.min';
 // Mixins
 @import 'mixins';
 
@@ -52,6 +53,10 @@ body {
     color: rgba(255, 255, 255, 0.5);
     background-color: #191919;
 
+}
+svg path,
+g path {
+    fill: inherit;
 }
 .container {
     width: 100%;

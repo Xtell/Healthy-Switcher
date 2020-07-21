@@ -26,8 +26,8 @@ const newer        = require('gulp-newer');
         },
         scripts: {
             src: [
-                "node_modules/jquery/dist/jquery.min.js",
                 "node_modules/picturefill/dist/picturefill.min.js",
+                "node_modules/swiper/js/swiper.min.js",
                 baseDir + '/js/libs/modernizr-custom.js',
                 baseDir + '/js/main.js',
             ],
