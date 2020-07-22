@@ -1,685 +1,563 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <title>Healthy switcher</title>
-  </head>
-  <body>
-    <div style="display: none;">
-      <include src="./build/images/sprite.svg"></include>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <title>Healthy switcher</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    <include src="./build/images/sprite.svg"></include>
+  </div>
+  <header class="page__header header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="" class="header__logo">
+          <img src="images/logo.svg" alt="Healthy Switcher" width="208" height="24" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="" class="header__nav-link">Menu</a></li>
+            <li><a href="" class="header__nav-link">Recipes</a></li>
+            <li><a href="" class="header__nav-link">Chefs</a></li>
+            <li><a href="" class="header__nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <header class="page__header header">
+  </header>
+  <main class="page__main">
+    <section class="intro">
       <div class="container">
-        <div class="header__inner">
-          <a href="" class="header__logo">
-            <img
-              src="images/logo.svg"
-              alt="Healthy Switcher"
-              width="208"
-              height="24"
-            />
-          </a>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li><a href="" class="header__nav-link">Menu</a></li>
-              <li><a href="" class="header__nav-link">Recipes</a></li>
-              <li><a href="" class="header__nav-link">Chefs</a></li>
-              <li><a href="" class="header__nav-link">Contacts</a></li>
-            </ul>
-          </nav>
+        <div class="intro__inner">
+          <h1 class="intro__heading">
+            Your <strong>favourite food</strong> delivered
+            <strong>hot & fresh</strong>
+          </h1>
+          <p class="intro__subheading">
+            HEALTHY SWITCHER chefs do all the prep work, like peeling,
+            chopping & marinating, so you can cook a fresh homemade dinner in
+            just 15 minutes.
+          </p>
+          <a href="" class="btn btn--default btn--large intro__link">Order now</a>
+          <ul class="intro__info-list">
+            <li class="intro__info-item intro__info-item--time">
+              <h3>Today 10:00 am - 7:00 pm</h3>
+              <p>Working hours</p>
+            </li>
+            <li class="intro__info-item intro__info-item--address">
+              <h3>Velyka Vasylkivska 100</h3>
+              <p>Get Directions</p>
+            </li>
+            <li class="intro__info-item intro__info-item--phone">
+              <a href="tel:+380638332415">
+                <h3>+38 (063)833 24 15</h3>
+              </a>
+              <p>Call Online</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <main class="page__main">
-      <section class="intro">
-        <div class="container">
-          <div class="intro__inner">
-            <h1 class="intro__heading">
-              Your <strong>favourite food</strong> delivered
-              <strong>hot & fresh</strong>
-            </h1>
-            <p class="intro__subheading">
-              HEALTHY SWITCHER chefs do all the prep work, like peeling,
-              chopping & marinating, so you can cook a fresh homemade dinner in
-              just 15 minutes.
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us__inner">
+          <header class="page__section-header about-us__header">
+            <h2 class="page__section-title">
+              The Basics Of Healthy Food
+              <span class="page__section-back-title">about</span>
+            </h2>
+            <p class="page__section-subtitle">
+              In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur
+              sint ea aliquip aliquip consectetur voluptate est. Eu minim
+              dolore laboris enim mollit voluptate irure esse aliquip.
             </p>
-            <a href="" class="btn btn--default btn--large intro__link"
-              >Order now</a
-            >
-            <ul class="intro__info-list">
-              <li class="intro__info-item intro__info-item--time">
-                <h3>Today 10:00 am - 7:00 pm</h3>
-                <p>Working hours</p>
-              </li>
-              <li class="intro__info-item intro__info-item--address">
-                <h3>Velyka Vasylkivska 100</h3>
-                <p>Get Directions</p>
-              </li>
-              <li class="intro__info-item intro__info-item--phone">
-                <a href="tel:+380638332415"><h3>+38 (063)833 24 15</h3></a>
-                <p>Call Online</p>
-              </li>
-            </ul>
+          </header>
+          <div class="about-us__slider">
+            <div class="swiper-container">
+              <div class="about-us__slider-wrapper swiper-wrapper">
+                <div class="about-us__slide swiper-slide">
+                  <picture>
+                    <source srcset="images/placeholder.webp" type="image/webp" />
+                    <img src="images/placeholder.jpg" alt="Image of fish" width="350" height="270" />
+                  </picture>
+                </div>
+                <div class="about-us__slide swiper-slide">
+                  <picture>
+                    <source srcset="images/placeholder-2.webp" type="image/webp" />
+                    <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
+                  </picture>
+                </div>
+                <div class="about-us__slide swiper-slide">
+                  <picture>
+                    <source srcset="images/placeholder-2.webp" type="image/webp" />
+                    <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
+                  </picture>
+                </div>
+                <div class="about-us__slide swiper-slide">
+                  <picture>
+                    <source srcset="images/placeholder-2.webp" type="image/webp" />
+                    <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <button class="about-us__slider-btn about-us__slider-btn--prev">
+              <svg width="16" height="16">
+                <use class="about-us__slider-icon" xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+            <button class="about-us__slider-btn about-us__slider-btn--next">
+              <svg width="16" height="16">
+                <use class="about-us__slider-icon" xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
-      </section>
-      <section class="about-us">
-        <div class="container">
-          <div class="about-us__inner">
-            <header class="page__section-header about-us__header">
-              <h2 class="page__section-title">
-                The Basics Of Healthy Food
-                <span class="page__section-back-title">about</span>
-              </h2>
-              <p class="page__section-subtitle">
-                In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur
-                sint ea aliquip aliquip consectetur voluptate est. Eu minim
-                dolore laboris enim mollit voluptate irure esse aliquip.
-              </p>
-            </header>
-            <div class="about-us__slider">
-              <div class="swiper-container">
-                <div class="about-us__slider-wrapper swiper-wrapper">
-                  <div class="about-us__slide swiper-slide">
-                    <picture>
-                      <source
-                        srcset="images/placeholder.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        src="images/placeholder.jpg"
-                        alt="Image of fish"
-                        width="350"
-                        height="270"
-                      />
-                    </picture>
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <div class="works__inner">
+          <header class="works__header page__section-header page__section-header--line">
+            <h2 class="page__section-title">How It Works</h2>
+            <span class="page__section-back-title">Work</span>
+          </header>
+          <ul class="works__list">
+            <li class="works__item">
+              <article class="works__card">
+                <h3 class="works__card-title">Pick meals</h3>
+                <p class="works__card-desc">
+                  Choose your meals from our diverse weekly menu. Find gluten
+                  or dairy free, low carb & veggie options.
+                </p>
+              </article>
+            </li>
+            <li class="works__item">
+              <article class="works__card">
+                <h3 class="works__card-title">Choose how often</h3>
+                <p class="works__card-desc">
+                  Our team of chefs do the prep work - no more chopping,
+                  measuring, or sink full of dishes!
+                </p>
+              </article>
+            </li>
+            <li class="works__item">
+              <article class="works__card">
+                <h3 class="works__card-title">Fast deliveries</h3>
+                <p class="works__card-desc">
+                  Your freshly prepped 15-min dinner kits arrive on your
+                  doorstep in a refrigerated box.
+                </p>
+              </article>
+            </li>
+            <li class="works__item">
+              <article class="works__card">
+                <h3 class="works__card-title">Tasty meals</h3>
+                <p class="works__card-desc">
+                  Gobble makes cooking fast, so you have more time to unwind
+                  and be with family.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="dishes">
+      <div class="container">
+        <div class="dishes__inner">
+          <header class="page__section-header page__section-header--line">
+            <h2 class="page__section-title">
+              Dish Of The Day
+              <span class="page__section-back-title">
+                Dishes
+              </span>
+            </h2>
+          </header>
+          <ul class="dishes__list">
+            <li class="dishes__item">
+              <article class="card card--dish">
+                <picture>
+                  <source srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x" type="image/webp" />
+                  <img srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x" src="images/dish-1.jpg"
+                    alt="dish of the day" class="card__image" />
+                </picture>
+                <button class="btn btn--circle card__btn-share" type="button"></button>
+                <section class="card__body">
+                  <h3 class="card__title">Featured Meal</h3>
+                  <p class="card__subtitle">
+                    Served with french fries + drink
+                  </p>
+                  <p class="card__text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                    Add whopper patty, Add Tender crisp patty and more...
+                  </p>
+                </section>
+                <footer class="card__footer">
+                  <div class="dishes__rating">
+                    <div class="stars dishes__stars" aria-label="Rating of this product">
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star_half"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star stars__icon-star--border" xlink:href="#icon_star_border"></use>
+                      </svg>
+                    </div>
+                    <span class="dishes__rating-value">12</span>
                   </div>
-                  <div class="about-us__slide swiper-slide">
-                    <picture>
-                      <source
-                        srcset="images/placeholder-2.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        src="images/placeholder-2.jpg"
-                        alt="Image of fish"
-                        width="350"
-                        height="270"
-                      />
-                    </picture>
+
+                  <a href="" class="btn btn--small btn--transparent dishes__order">Order</a>
+                </footer>
+              </article>
+            </li>
+            <li class="dishes__item">
+              <article class="card card--dish">
+                <picture>
+                  <source srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x" type="image/webp" />
+                  <img srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x" src="images/dish-1.jpg"
+                    alt="dish of the day" class="card__image" />
+                </picture>
+                <button class="btn btn--circle card__btn-share" type="button"></button>
+                <section class="card__body">
+                  <h3 class="card__title">Featured Meal</h3>
+                  <p class="card__subtitle">
+                    Served with french fries + drink
+                  </p>
+                  <p class="card__text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                    Add whopper patty, Add Tender crisp patty and more...
+                  </p>
+                </section>
+                <footer class="card__footer">
+                  <div class="dishes__rating">
+                    <div class="stars dishes__stars" aria-label="Rating of this product">
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star_half"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star stars__icon-star--border" xlink:href="#icon_star_border"></use>
+                      </svg>
+                    </div>
+                    <span class="dishes__rating-value">12</span>
                   </div>
-                  <div class="about-us__slide swiper-slide">
-                    <picture>
-                      <source
-                        srcset="images/placeholder-2.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        src="images/placeholder-2.jpg"
-                        alt="Image of fish"
-                        width="350"
-                        height="270"
-                      />
-                    </picture>
+
+                  <a href="" class="btn btn--small btn--transparent dishes__order">Order</a>
+                </footer>
+              </article>
+            </li>
+            <li class="dishes__item">
+              <article class="card card--dish">
+                <picture>
+                  <source srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x" type="image/webp" />
+                  <img srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x" src="images/dish-1.jpg"
+                    alt="dish of the day" class="card__image" />
+                </picture>
+                <button class="btn btn--circle card__btn-share" type="button"></button>
+                <section class="card__body">
+                  <h3 class="card__title">Featured Meal</h3>
+                  <p class="card__subtitle">
+                    Served with french fries + drink
+                  </p>
+                  <p class="card__text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                    Add whopper patty, Add Tender crisp patty and more...
+                  </p>
+                </section>
+                <footer class="card__footer">
+                  <div class="dishes__rating">
+                    <div class="stars dishes__stars" aria-label="Rating of this product">
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star_half"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star stars__icon-star--border" xlink:href="#icon_star_border"></use>
+                      </svg>
+                    </div>
+                    <span class="dishes__rating-value">12</span>
                   </div>
-                  <div class="about-us__slide swiper-slide">
+
+                  <a href="" class="btn btn--small btn--transparent dishes__order">Order</a>
+                </footer>
+              </article>
+            </li>
+            <li class="dishes__item">
+              <article class="card card--dish">
+                <picture>
+                  <source srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x" type="image/webp" />
+                  <img srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x" src="images/dish-1.jpg"
+                    alt="dish of the day" class="card__image" />
+                </picture>
+                <button class="btn btn--circle card__btn-share" type="button"></button>
+                <section class="card__body">
+                  <h3 class="card__title">Featured Meal</h3>
+                  <p class="card__subtitle">
+                    Served with french fries + drink
+                  </p>
+                  <p class="card__text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                    Add whopper patty, Add Tender crisp patty and more...
+                  </p>
+                </section>
+                <footer class="card__footer">
+                  <div class="dishes__rating">
+                    <div class="stars dishes__stars" aria-label="Rating of this product">
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star_half"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star stars__icon-star--border" xlink:href="#icon_star_border"></use>
+                      </svg>
+                    </div>
+                    <span class="dishes__rating-value">12</span>
+                  </div>
+                  <a href="" class="btn btn--small btn--transparent dishes__order">Order</a>
+                </footer>
+              </article>
+            </li>
+            <li class="dishes__item">
+              <article class="card card--dish">
+                <picture>
+                  <source srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x" type="image/webp" />
+                  <img srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x" src="images/dish-1.jpg"
+                    alt="dish of the day" class="card__image" />
+                </picture>
+                <button class="btn btn--circle card__btn-share" type="button"></button>
+                <section class="card__body">
+                  <h3 class="card__title">Featured Meal</h3>
+                  <p class="card__subtitle">
+                    Served with french fries + drink
+                  </p>
+                  <p class="card__text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                    Add whopper patty, Add Tender crisp patty and more...
+                  </p>
+                </section>
+                <footer class="card__footer">
+                  <div class="dishes__rating">
+                    <div class="stars dishes__stars" aria-label="Rating of this product">
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star_half"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star stars__icon-star--border" xlink:href="#icon_star_border"></use>
+                      </svg>
+                    </div>
+                    <span class="dishes__rating-value">12</span>
+                  </div>
+                  <a href="" class="btn btn--small btn--transparent dishes__order">Order</a>
+                </footer>
+              </article>
+            </li>
+            <li class="dishes__item">
+              <article class="card card--dish">
+                <picture>
+                  <source srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x" type="image/webp" />
+                  <img srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x" src="images/dish-1.jpg"
+                    alt="dish of the day" class="card__image" />
+                </picture>
+                <button class="btn btn--circle card__btn-share" type="button"></button>
+                <section class="card__body">
+                  <h3 class="card__title">Featured Meal</h3>
+                  <p class="card__subtitle">
+                    Served with french fries + drink
+                  </p>
+                  <p class="card__text">
+                    Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
+                    Add whopper patty, Add Tender crisp patty and more...
+                  </p>
+                </section>
+                <footer class="card__footer">
+                  <div class="dishes__rating">
+                    <div class="stars dishes__stars" aria-label="Rating of this product">
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star" xlink:href="#icon_star_half"></use>
+                      </svg>
+                      <svg class="stars__icon" width="20" height="20">
+                        <use class="stars__icon-star stars__icon-star--border" xlink:href="#icon_star_border"></use>
+                      </svg>
+                    </div>
+                    <span class="dishes__rating-value">12</span>
+                  </div>
+                  <a href="" class="btn btn--small btn--transparent dishes__order">Order</a>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="chefs">
+      <div class="container">
+        <div class="chefs__inner">
+          <header class="page__section-header page__section-header--line">
+            <h2 class="page__section-title">
+              This month's chefs
+              <span class="page__section-back-title">
+                Chefs
+              </span>
+            </h2>
+          </header>
+          <ul class="chefs__list">
+            <li class="chefs__item">
+              <div class="chefs__info">
+                <div class="chefs__info-left">
+                  <div class="chefs__avatar">
                     <picture>
-                      <source
-                        srcset="images/placeholder-2.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        src="images/placeholder-2.jpg"
-                        alt="Image of fish"
-                        width="350"
-                        height="270"
-                      />
+                      <source srcset="images/chef-1.webp" type="image/webp">
+                      <img src="images/chef-1.jpg" alt=" Gregory Flores - chef of the cold" class="chefs__avatar-img"
+                        width="65" height="65">
                     </picture>
                   </div>
                 </div>
+                <div class="cefs__info-right">
+                  <h3 class="chefs__name">Gregory Flores</h3>
+                  <p class="chefs__desc">Chef of the cold</p>
+                </div>
               </div>
-              <button class="about-us__slider-btn about-us__slider-btn--prev">
-                <svg width="16" height="16">
-                  <use
-                    class="about-us__slider-icon"
-                    xlink:href="#icon-arrow"
-                  ></use>
-                </svg>
-              </button>
-              <button class="about-us__slider-btn about-us__slider-btn--next">
-                <svg width="16" height="16">
-                  <use
-                    class="about-us__slider-icon"
-                    xlink:href="#icon-arrow"
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </div>
+              <div class="chefs__images">
+                <picture>
+                  <source srcset="images/chef-1-img-big.webp" type="image/webp">
+                  <img src="images/chef-1-img-big.jpg" alt="Burger" class="chefs__image chefs__image--big" width="160"
+                    height="65">
+                </picture>
+                <picture>
+                  <source srcset="images/chef-1-img.webp" type="image/webp">
+                  <img src="images/chef-1-img.jpg" alt="Burger" class="chefs__image" width="65" height="65">
+                </picture>
+                <picture>
+                  <source srcset="images/chef-1-img-2.webp" type="image/webp">
+                  <img src="images/chef-1-img-1.jpg" alt="Burger" class="chefs__image" width="65" height="65">
+                </picture>
+              </div>
+            </li>
+            <li class="chefs__item">
+              <div class="chefs__info">
+                <div class="chefs__info-left">
+                  <div class="chefs__avatar">
+                    <picture>
+                      <source srcset="images/chef-2.webp" type="image/webp">
+                      <img src="images/chef-2.jpg" alt="Annette Cooper - Chef of the hot" class="chefs__avatar-img"
+                        width="65" height="65">
+                    </picture>
+                  </div>
+                </div>
+                <div class="cefs__info-right">
+                  <h3 class="chefs__name">Annette Cooper</h3>
+                  <p class="chefs__desc">Chef of the hot</p>
+                </div>
+              </div>
+              <div class="chefs__images">
+                <picture>
+                  <source srcset="images/chef-2-img-big.webp" type="image/webp">
+                  <img src="images/chef-2-img-big.jpg" alt="Burger" class="chefs__image chefs__image--big" width="160"
+                    height="65">
+                </picture>
+                <picture>
+                  <source srcset="images/chef-2-img.webp" type="image/webp">
+                  <img src="images/chef-2-img.jpg" alt="Burger" class="chefs__image" width="65" height="65">
+                </picture>
+                <picture>
+                  <source srcset="images/chef-2-img-2.webp" type="image/webp">
+                  <img src="images/chef-2-img-2.jpg" alt="Burger" class="chefs__image" width="65" height="65">
+                </picture>
+              </div>
+            </li>
+            <li class="chefs__item">
+              <div class="chefs__info">
+                <div class="chefs__info-left">
+                  <div class="chefs__avatar">
+                    <picture>
+                      <source srcset="images/chef-3.webp" type="image/webp">
+                      <img src="images/chef-3.jpg" alt="Greg Fox - Сhef macro kitchen" class="chefs__avatar-img"
+                        width="65" height="65">
+                    </picture>
+                  </div>
+                </div>
+                <div class="cefs__info-right">
+                  <h3 class="chefs__name">Greg Fox</h3>
+                  <p class="chefs__desc">Сhef macro kitchen</p>
+                </div>
+              </div>
+              <div class="chefs__images">
+                <picture>
+                  <source srcset="images/chef-3-img-big.webp" type="image/webp">
+                  <img src="images/chef-3-img-big.jpg" alt="Burger" class="chefs__image chefs__image--big" width="160"
+                    height="65">
+                </picture>
+                <picture>
+                  <source srcset="images/chef-3-img.webp" type="image/webp">
+                  <img src="images/chef-3-img.jpg" alt="Burger" class="chefs__image" width="65" height="65">
+                </picture>
+                <picture>
+                  <source srcset="images/chef-3-img.webp" type="image/webp">
+                  <img src="images/chef-3-img-2.jpg" alt="Burger" class="chefs__image" width="65" height="65">
+                </picture>
+              </div>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="works">
-        <div class="container">
-          <div class="works__inner">
-            <header
-              class="works__header page__section-header page__section-header--line"
-            >
-              <h2 class="page__section-title">How It Works</h2>
-              <span class="page__section-back-title">Work</span>
-            </header>
-            <ul class="works__list">
-              <li class="works__item">
-                <article class="works__card">
-                  <h3 class="works__card-title">Pick meals</h3>
-                  <p class="works__card-desc">
-                    Choose your meals from our diverse weekly menu. Find gluten
-                    or dairy free, low carb & veggie options.
-                  </p>
-                </article>
-              </li>
-              <li class="works__item">
-                <article class="works__card">
-                  <h3 class="works__card-title">Choose how often</h3>
-                  <p class="works__card-desc">
-                    Our team of chefs do the prep work - no more chopping,
-                    measuring, or sink full of dishes!
-                  </p>
-                </article>
-              </li>
-              <li class="works__item">
-                <article class="works__card">
-                  <h3 class="works__card-title">Fast deliveries</h3>
-                  <p class="works__card-desc">
-                    Your freshly prepped 15-min dinner kits arrive on your
-                    doorstep in a refrigerated box.
-                  </p>
-                </article>
-              </li>
-              <li class="works__item">
-                <article class="works__card">
-                  <h3 class="works__card-title">Tasty meals</h3>
-                  <p class="works__card-desc">
-                    Gobble makes cooking fast, so you have more time to unwind
-                    and be with family.
-                  </p>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="dishes">
-        <div class="container">
-          <div class="dishes__inner">
-            <header class="page__section-header page__section-header--line">
-              <h2 class="page__section-title">
-                Dish Of The Day
-                <span class="page__section-back-title">
-                  Dishes
-                </span>
-              </h2>
-            </header>
-            <ul class="dishes__list">
-              <li class="dishes__item">
-                <article class="card card--dish">
-                  <picture>
-                    <source
-                      srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x"
-                      type="image/webp"
-                    />
-                    <img
-                      srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x"
-                      src="images/dish-1.jpg"
-                      alt="dish of the day"
-                      class="card__image"
-                    />
-                  </picture>
-                  <button
-                    class="btn btn--circle card__btn-share"
-                    type="button"
-                  ></button>
-                  <section class="card__body">
-                    <h3 class="card__title">Featured Meal</h3>
-                    <p class="card__subtitle">
-                      Served with french fries + drink
-                    </p>
-                    <p class="card__text">
-                      Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
-                      Add whopper patty, Add Tender crisp patty and more...
-                    </p>
-                  </section>
-                  <footer class="card__footer">
-                    <div class="dishes__rating">
-                      <div
-                        class="stars dishes__stars"
-                        aria-label="Rating of this product"
-                      >
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star_half"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star stars__icon-star--border"
-                            xlink:href="#icon_star_border"
-                          ></use>
-                        </svg>
-                      </div>
-                      <span class="dishes__rating-value">12</span>
-                    </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.min.js"></script>
+</body>
 
-                    <a
-                      href=""
-                      class="btn btn--small btn--transparent dishes__order"
-                      >Order</a
-                    >
-                  </footer>
-                </article>
-              </li>
-              <li class="dishes__item">
-                <article class="card card--dish">
-                  <picture>
-                    <source
-                      srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x"
-                      type="image/webp"
-                    />
-                    <img
-                      srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x"
-                      src="images/dish-1.jpg"
-                      alt="dish of the day"
-                      class="card__image"
-                    />
-                  </picture>
-                  <button
-                    class="btn btn--circle card__btn-share"
-                    type="button"
-                  ></button>
-                  <section class="card__body">
-                    <h3 class="card__title">Featured Meal</h3>
-                    <p class="card__subtitle">
-                      Served with french fries + drink
-                    </p>
-                    <p class="card__text">
-                      Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
-                      Add whopper patty, Add Tender crisp patty and more...
-                    </p>
-                  </section>
-                  <footer class="card__footer">
-                    <div class="dishes__rating">
-                      <div
-                        class="stars dishes__stars"
-                        aria-label="Rating of this product"
-                      >
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star_half"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star stars__icon-star--border"
-                            xlink:href="#icon_star_border"
-                          ></use>
-                        </svg>
-                      </div>
-                      <span class="dishes__rating-value">12</span>
-                    </div>
-
-                    <a
-                      href=""
-                      class="btn btn--small btn--transparent dishes__order"
-                      >Order</a
-                    >
-                  </footer>
-                </article>
-              </li>
-              <li class="dishes__item">
-                <article class="card card--dish">
-                  <picture>
-                    <source
-                      srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x"
-                      type="image/webp"
-                    />
-                    <img
-                      srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x"
-                      src="images/dish-1.jpg"
-                      alt="dish of the day"
-                      class="card__image"
-                    />
-                  </picture>
-                  <button
-                    class="btn btn--circle card__btn-share"
-                    type="button"
-                  ></button>
-                  <section class="card__body">
-                    <h3 class="card__title">Featured Meal</h3>
-                    <p class="card__subtitle">
-                      Served with french fries + drink
-                    </p>
-                    <p class="card__text">
-                      Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
-                      Add whopper patty, Add Tender crisp patty and more...
-                    </p>
-                  </section>
-                  <footer class="card__footer">
-                    <div class="dishes__rating">
-                      <div
-                        class="stars dishes__stars"
-                        aria-label="Rating of this product"
-                      >
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star_half"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star stars__icon-star--border"
-                            xlink:href="#icon_star_border"
-                          ></use>
-                        </svg>
-                      </div>
-                      <span class="dishes__rating-value">12</span>
-                    </div>
-
-                    <a
-                      href=""
-                      class="btn btn--small btn--transparent dishes__order"
-                      >Order</a
-                    >
-                  </footer>
-                </article>
-              </li>
-              <li class="dishes__item">
-                <article class="card card--dish">
-                  <picture>
-                    <source
-                      srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x"
-                      type="image/webp"
-                    />
-                    <img
-                      srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x"
-                      src="images/dish-1.jpg"
-                      alt="dish of the day"
-                      class="card__image"
-                    />
-                  </picture>
-                  <button
-                    class="btn btn--circle card__btn-share"
-                    type="button"
-                  ></button>
-                  <section class="card__body">
-                    <h3 class="card__title">Featured Meal</h3>
-                    <p class="card__subtitle">
-                      Served with french fries + drink
-                    </p>
-                    <p class="card__text">
-                      Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
-                      Add whopper patty, Add Tender crisp patty and more...
-                    </p>
-                  </section>
-                  <footer class="card__footer">
-                    <div class="dishes__rating">
-                      <div
-                        class="stars dishes__stars"
-                        aria-label="Rating of this product"
-                      >
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star_half"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star stars__icon-star--border"
-                            xlink:href="#icon_star_border"
-                          ></use>
-                        </svg>
-                      </div>
-                      <span class="dishes__rating-value">12</span>
-                    </div>
-                    <a
-                      href=""
-                      class="btn btn--small btn--transparent dishes__order"
-                      >Order</a
-                    >
-                  </footer>
-                </article>
-              </li>
-              <li class="dishes__item">
-                <article class="card card--dish">
-                  <picture>
-                    <source
-                      srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x"
-                      type="image/webp"
-                    />
-                    <img
-                      srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x"
-                      src="images/dish-1.jpg"
-                      alt="dish of the day"
-                      class="card__image"
-                    />
-                  </picture>
-                  <button
-                    class="btn btn--circle card__btn-share"
-                    type="button"
-                  ></button>
-                  <section class="card__body">
-                    <h3 class="card__title">Featured Meal</h3>
-                    <p class="card__subtitle">
-                      Served with french fries + drink
-                    </p>
-                    <p class="card__text">
-                      Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
-                      Add whopper patty, Add Tender crisp patty and more...
-                    </p>
-                  </section>
-                  <footer class="card__footer">
-                    <div class="dishes__rating">
-                      <div
-                        class="stars dishes__stars"
-                        aria-label="Rating of this product"
-                      >
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star_half"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star stars__icon-star--border"
-                            xlink:href="#icon_star_border"
-                          ></use>
-                        </svg>
-                      </div>
-                      <span class="dishes__rating-value">12</span>
-                    </div>
-                    <a
-                      href=""
-                      class="btn btn--small btn--transparent dishes__order"
-                      >Order</a
-                    >
-                  </footer>
-                </article>
-              </li>
-              <li class="dishes__item">
-                <article class="card card--dish">
-                  <picture>
-                    <source
-                      srcset="images/dish-1.webp 1x, images/dish-1-2x.webp 2x"
-                      type="image/webp"
-                    />
-                    <img
-                      srcset="images/dish-1.jpg 1x, images/dish-1-2x.jpg 2x"
-                      src="images/dish-1.jpg"
-                      alt="dish of the day"
-                      class="card__image"
-                    />
-                  </picture>
-                  <button
-                    class="btn btn--circle card__btn-share"
-                    type="button"
-                  ></button>
-                  <section class="card__body">
-                    <h3 class="card__title">Featured Meal</h3>
-                    <p class="card__subtitle">
-                      Served with french fries + drink
-                    </p>
-                    <p class="card__text">
-                      Choice of: Coke, Fanta, Sprite, Upgrade to large fries,
-                      Add whopper patty, Add Tender crisp patty and more...
-                    </p>
-                  </section>
-                  <footer class="card__footer">
-                    <div class="dishes__rating">
-                      <div
-                        class="stars dishes__stars"
-                        aria-label="Rating of this product"
-                      >
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star"
-                            xlink:href="#icon_star_half"
-                          ></use>
-                        </svg>
-                        <svg class="stars__icon" width="20" height="20">
-                          <use
-                            class="stars__icon-star stars__icon-star--border"
-                            xlink:href="#icon_star_border"
-                          ></use>
-                        </svg>
-                      </div>
-                      <span class="dishes__rating-value">12</span>
-                    </div>
-                    <a
-                      href=""
-                      class="btn btn--small btn--transparent dishes__order"
-                      >Order</a
-                    >
-                  </footer>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="js/main.min.js"></script>
-  </body>
 </html>
