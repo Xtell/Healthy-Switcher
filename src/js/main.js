@@ -1,5 +1,5 @@
 headerScroll();
-
+document.querySelectorAll('.simplebar').forEach((el) => (new SimpleBar(el)));
 let mySwiper = new Swiper ('.swiper-container', {
     navigation: {
         nextEl: '.about-us__slider-btn--next',

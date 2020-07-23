@@ -27,6 +27,7 @@
     color: #303030;
     text-transform: uppercase;
     z-index: -1;
+    user-select: none;
 }
 .page__section-header--line .page__section-title {
     margin-bottom: 90px;

@@ -28,7 +28,7 @@
     background-position: 50% 50%;
 }
 
-.card__body {
+.card--dish .card__body {
     padding: 0px 30px 20px 30px;
 }
 .card--dish .card__title {
@@ -58,4 +58,33 @@
     padding-left: 30px;
     padding-right: 24px;
     padding-bottom: 24px;
+}
+.card--social {
+    width: 350px;
+
+}
+.card--social .card__header {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 2px solid #303030;
+}
+.card--social .card__body {
+    height: 240px;
+    overflow-y: auto;
+    & .simplebar-scrollbar::before {
+        background-color: #303030;
+      }
+}
+
+.card--social .card__body.card__body--post {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.card--social .card__body--photos {
+    & .simplebar-scrollbar::before {
+        background-color: #ffffff;
+        opacity: 0.5;
+      }
 }
