@@ -1,0 +1,28 @@
+.footer {
+  background-color: #252525;
+}
+.footer__top {
+  border-bottom: 2px solid #303030;
+}
+.footer__top-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.footer__bottom-inner {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo {
+  margin-bottom: 10px;
+}
+.footer__copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #737373;
+}

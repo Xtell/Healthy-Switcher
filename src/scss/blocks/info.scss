@@ -1,0 +1,36 @@
+.info__list {
+  @include reset-list;
+  display: flex;
+}
+.info__item {
+  width: 245px;
+  padding: 41px 15px 0 15px;
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  &--time {
+    background-image: url("../images/icon-clock.svg");
+  }
+  &--address {
+    background-image: url("../images/icon-contact.svg");
+  }
+  &--phone {
+    background-image: url("../images/icon-phone.svg");
+  }
+}
+.info__item h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.info__item p {
+  margin: 0;
+
+  font-size: 14px;
+  text-align: center;
+}
+.info__item a {
+  text-decoration: none;
+}
