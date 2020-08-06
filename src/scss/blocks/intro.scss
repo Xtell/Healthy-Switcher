@@ -26,11 +26,19 @@
     & strong {
         font-weight: 700;
     }
+    @include media-breakpoint-down($md) {
+        font-size: 40px;
+    }
+    @include media-breakpoint-down($sm) {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
 }
 .intro__subheading {
-    width: 600px;
     margin: 0;
     margin-bottom: 40px;
+    padding: 0 22%;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
@@ -38,6 +46,10 @@
     letter-spacing: -0.2px;
     color: #FFFFFF;
     opacity: 0.7;
+    @include media-breakpoint-down($md) {
+        padding: 0 10%;
+    }
+    
 }
 .intro__link {
     margin-bottom: 70px;

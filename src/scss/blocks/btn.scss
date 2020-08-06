@@ -65,6 +65,9 @@
 
 .btn--large {
     padding: 25px 50px;
+    @include media-breakpoint-down($md) {
+        padding: 15px 40px;
+    }
 }
 .btn--full-width {
     width: 100%;

@@ -22,10 +22,13 @@
           <ul class="header__nav-list">
             <li><a href="" class="header__nav-link">Menu</a></li>
             <li><a href="" class="header__nav-link">Recipes</a></li>
-            <li><a href="" class="header__nav-link">Chefs</a></li>
+            <li><a href="#chefs" class="header__nav-link">Chefs</a></li>
             <li><a href="" class="header__nav-link">Contacts</a></li>
           </ul>
         </nav>
+        <button class="header__nav-toggle" type="button">
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -65,7 +68,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us page__section page__section--margin-top">
       <div class="container">
         <div class="about-us__inner">
           <header class="page__section-header about-us__header">
@@ -73,52 +76,59 @@
               The Basics Of Healthy Food
               <span class="page__section-back-title">about</span>
             </h2>
-            <p class="page__section-subtitle">
+            <p class="page__section-subtitle about-us__subtitle">
               In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur
               sint ea aliquip aliquip consectetur voluptate est. Eu minim
               dolore laboris enim mollit voluptate irure esse aliquip.
             </p>
           </header>
-          <div class="about-us__slider">
-            <div class="swiper-container">
-              <div class="about-us__slider-wrapper swiper-wrapper">
-                <div class="about-us__slide swiper-slide">
-                  <picture>
-                    <source srcset="images/placeholder.webp" type="image/webp" />
-                    <img src="images/placeholder.jpg" alt="Image of fish" width="350" height="270" />
-                  </picture>
-                </div>
-                <div class="about-us__slide swiper-slide">
-                  <picture>
-                    <source srcset="images/placeholder-2.webp" type="image/webp" />
-                    <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
-                  </picture>
-                </div>
-                <div class="about-us__slide swiper-slide">
-                  <picture>
-                    <source srcset="images/placeholder-2.webp" type="image/webp" />
-                    <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
-                  </picture>
-                </div>
-                <div class="about-us__slide swiper-slide">
-                  <picture>
-                    <source srcset="images/placeholder-2.webp" type="image/webp" />
-                    <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
-                  </picture>
+          <div class="about-us__slider-wrapper">
+            <div class="about-us__slider">
+              <div class="swiper-container">
+                <div class="about-us__slider-wrapper swiper-wrapper">
+                  <div class="about-us__slide swiper-slide">
+                    <picture>
+                      <source media="(max-width: 575.98px)" srcset="images/placeholder-mobile.webp" type="image/webp">
+                      <source media="(max-width: 575.98px)" srcset="images/placeholder-mobile.jpg">
+                      <source srcset="images/placeholder.webp" type="image/webp" />
+                      <img src="images/placeholder.jpg" alt="Image of fish" width="350" height="270" />
+                    </picture>
+                  </div>
+                  <div class="about-us__slide swiper-slide">
+                    <picture>
+                      <source media="(max-width: 575.98px)" srcset="images/placeholder-2-mobile.webp" type="image/webp">
+                      <source media="(max-width: 575.98px)" srcset="images/placeholder-2-mobile.jpg">
+                      <source srcset="images/placeholder-2.webp" type="image/webp" />
+                      <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
+                    </picture>
+                  </div>
+                  <div class="about-us__slide swiper-slide">
+                    <picture>
+                      <source srcset="images/placeholder-2.webp" type="image/webp" />
+                      <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
+                    </picture>
+                  </div>
+                  <div class="about-us__slide swiper-slide">
+                    <picture>
+                      <source srcset="images/placeholder-2.webp" type="image/webp" />
+                      <img src="images/placeholder-2.jpg" alt="Image of fish" width="350" height="270" />
+                    </picture>
+                  </div>
                 </div>
               </div>
+              <button class="about-us__slider-btn about-us__slider-btn--prev">
+                <svg width="16" height="16">
+                  <use class="about-us__slider-icon" xlink:href="#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="about-us__slider-btn about-us__slider-btn--next">
+                <svg width="16" height="16">
+                  <use class="about-us__slider-icon" xlink:href="#icon-arrow"></use>
+                </svg>
+              </button>
             </div>
-            <button class="about-us__slider-btn about-us__slider-btn--prev">
-              <svg width="16" height="16">
-                <use class="about-us__slider-icon" xlink:href="#icon-arrow"></use>
-              </svg>
-            </button>
-            <button class="about-us__slider-btn about-us__slider-btn--next">
-              <svg width="16" height="16">
-                <use class="about-us__slider-icon" xlink:href="#icon-arrow"></use>
-              </svg>
-            </button>
           </div>
+
         </div>
       </div>
     </section>
@@ -447,7 +457,7 @@
         </div>
       </div>
     </section>
-    <section class="chefs">
+    <section class="chefs" id="chefs">
       <div class="container">
         <div class="chefs__inner">
           <header class="page__section-header page__section-header--line">

@@ -1,8 +1,15 @@
 .page__section-header {
     position: relative;
-    width: 734px;
+ 
     margin: 0 auto;
     text-align: center;
+}
+.page__section--margin-top {
+    margin-top: -191px;
+
+    @include media-breakpoint-down($sm) {
+        margin-top: -160px;
+    }
 }
 .page__section-title {
     position: relative;
@@ -13,7 +20,14 @@
     line-height: 60px;
     letter-spacing: 0.2em;
     color: #D9D9D9;
-    z-index: 100;
+    z-index: 1;
+    @include media-breakpoint-down($md) {
+        font-size: 24px;
+    }
+    @include media-breakpoint-down($sm) {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
 }
 .page__section-back-title {
     position: absolute;
@@ -28,6 +42,12 @@
     text-transform: uppercase;
     z-index: -1;
     user-select: none;
+    @include media-breakpoint-down($md) {
+        font-size: 60px;
+    }
+    @include media-breakpoint-down($sm) {
+        font-size: 46px;
+    }
 }
 .page__section-header--line .page__section-title {
     margin-bottom: 90px;
@@ -49,5 +69,11 @@
     line-height: 30px;
     text-align: center;
     color: #A6A6A6;
+
+    @include media-breakpoint-down($sm) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
 }
 

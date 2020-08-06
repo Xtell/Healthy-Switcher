@@ -44,7 +44,9 @@ input[type="radio"].sr-only {
 .lock {
     overflow: hidden;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     position: relative;
     min-width: 320px;
@@ -53,7 +55,9 @@ body {
     line-height: normal;
     color: rgba(255, 255, 255, 0.5);
     background-color: #191919;
-
+}
+body.isLock {
+    overflow: hidden;
 }
 svg path,
 g path {
