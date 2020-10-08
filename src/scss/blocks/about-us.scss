@@ -6,21 +6,15 @@
   background-color: #252525;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  @include media-breakpoint-down($sm) {
-    padding: 70px 20px 60px 20px;
-  }
+
 }
 .about-us__header {
   margin-bottom: 90px;
-  @include media-breakpoint-down($sm) {
-    margin-bottom: 28px;
-  }
+
 }
 .about-us__subtitle {
   padding: 0 18%;
-  @include media-breakpoint-down($md) {
-    padding: 0 6%;
-  }
+
 }
 .about-us__slider-wrapper {
   width: 100%;
@@ -29,13 +23,6 @@
 .about-us__slider {
   width: 734px;
   margin: 0 auto;
-
-  @include media-breakpoint-down($lg) {
-    width: 500px;
-  }
-  @include media-breakpoint-down($sm) {
-    width: 250px;
-  }
 }
 .about-us__slider-btn {
   position: absolute;
@@ -51,42 +38,16 @@
   background-color: transparent;
   &--prev {
     left: 5%;
-    @include media-breakpoint-down($xl) {
-      left: 2%;
-    }
   }
   &--next {
     right: 5%;
     transform: rotate(180deg);
-    @include media-breakpoint-down($xl) {
-      right: 2%;
-    }
-  }
-  @include media-breakpoint-down($md) {
-    top: initial;
-    bottom: -65px;
 
-    width: 40px;
-    height: 40px;
-    &--next {
-      right: 40%;
-    }
-    &--prev {
-      left: 40%;
-    }
   }
-  @include media-breakpoint-down($sm) {
-    bottom: -50px;
-    &--next {
-      right: 15%;
-    }
-    &--prev {
-      left: 15%;
-    }
-  }
+
   &:hover:not(.about-us__slider-btn--disabled) {
     border-color: lighten(#303030, 10%);
-    & g path {
+    & .about-us__slider-icon path {
       fill: lighten(#4d4d4d, 10%);
     }
   }
@@ -101,7 +62,5 @@
 }
 .about-us__slide img {
   width: 350px;
-  @include media-breakpoint-down($sm) {
-    width: 260px;
-  }
+
 }

@@ -1,160 +1,161 @@
 .receipes {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 .receipes__cards {
-    display: grid;
-    grid-template-columns: 540px 540px;
-    grid-template-areas: 
-                    "big default"
-                    "big default"
-                    "big default";
-    grid-gap: 30px;
-
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: repeat(3, auto);
+  // grid-template-rows: repeat(3, auto);
+  // grid-template-areas:
+  //                 "big default"
+  //                 "big default"
+  //                 "big default";
+  grid-gap: 30px;
 }
 .receipes__card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    grid-area: default;
-    width: 540px;
-    padding: 24px 26px;
-    transition: all 0.3s ease;
-    z-index: 1;
-    &:hover {
-        background-color: $primary-color;
-        transition: all 0.3s ease;
-    }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+//   grid-area: default;
+  width: 540px;
+  padding: 24px 26px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  &:hover {
+    background-color: $primary-color;
+    transition: all 0.1s ease;
+  }
 }
 .receipes__card--big {
-    grid-area: big;
+  grid-row: 1/4;
+  // grid-area: big;
 }
 
 .receipes__desc {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 30px;
-    color: #ffffff;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .receipes__author {
-    display: none;
-    margin: 0;
+  display: none;
+  margin: 0;
 }
 .receipes__card-bg {
-    display: none;
+  display: none;
 }
 .receipes__card-btn {
-    display: none;
-    position: absolute;
+  display: none;
+  position: absolute;
 }
 .receipes__info {
-    display: flex;
-    align-items: center;
-    width: 190px;
+  display: flex;
+  align-items: center;
+  width: 190px;
 }
 .receipes__tag {
-    padding: 0 10px; 
-    margin: 0;
-    margin-right: 15px;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 25px;
-    background-color: #000000;
-    border-radius: 4px;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
+  padding: 0 10px;
+  margin: 0;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 25px;
+  background-color: #000000;
+  border-radius: 4px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
 }
 .receipes__date {
-    margin: 0;
-    font-size: 12px;
-    line-height: 25px;
-    color: #B3B3B3;
+  margin: 0;
+  font-size: 12px;
+  line-height: 25px;
+  color: #b3b3b3;
 }
-.receipes__stats{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 30px;
-    color: #D8D8D8;
-    & svg {
-        margin-right: 14px;
-    }
-    & use {
-        fill: #ffffff;
-    }
+.receipes__stats {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 30px;
+  color: #d8d8d8;
+  & svg {
+    margin-right: 14px;
+  }
+  & use {
+    fill: #ffffff;
+  }
 }
 .receipes__views {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    margin-right: 26px;
-
+  margin-right: 26px;
 }
 .receipes__comments {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .receipes__card:not(.receipes__card--with-bg):hover :not(.receipes__tag) {
-    color: #252525;
-    fill: #252525;
-    transition: all 0.3s ease;
+  color: #252525;
+  fill: #252525;
+  transition: all 0.3s ease;
 }
 .receipes__card--with-bg .receipes__card-bg {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    & img {
-        border-radius: 6px;
-    }
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  & img {
+    border-radius: 6px;
+  }
 }
 .receipes__card--with-bg:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 .receipes__card--big {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
-    padding: 60px 90px;
+  padding: 60px 90px;
 }
 .receipes__card--big .receipes__text {
-    order: 1;
-    text-align: center;
+  order: 1;
+  text-align: center;
 }
 .receipes__card--big .receipes__desc {
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 45px;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 45px;
 }
 .receipes__card--big .receipes__author {
-    display: block;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 60px;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 60px;
 }
 .receipes__card--big .receipes__info {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 25px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
 }
 .receipes__card--big .receipes__tag {
-    margin-right: 0;
-    margin-bottom: 65px;
+  margin-right: 0;
+  margin-bottom: 65px;
 }
 .receipes__card--big .receipes__date {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
 }
 .receipes__card--big .receipes__stats {
-    order: 2;
+  order: 2;
 }

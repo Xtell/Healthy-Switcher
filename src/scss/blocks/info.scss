@@ -1,9 +1,6 @@
 .info__list {
   @include reset-list;
   display: flex;
-  @include media-breakpoint-down($md) {
-    flex-direction: column;
-  }
 }
 .info__item {
   width: 245px;
